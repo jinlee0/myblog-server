@@ -1,0 +1,27 @@
+{
+  "name": "jin-lee-blog-server",
+  "version": "0.0.0",
+  "description": "",
+  "author": {
+    "name": "Jin Lee",
+    "email": "wls4370@gmail.com"
+  },
+  "repository": {},
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
