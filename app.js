@@ -13,6 +13,7 @@ app.use(cors());
 connect();
 
 app.use(morgan('dev'));
+app.use('/assets', express.static('assets'))
 app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -27,6 +28,7 @@ app.use((err, req, res, next) => {
 
 app.use('/user', require('./routes/user'));
 app.use('/resume', require('./routes/resume'));
+app.use('/project', require('./routes/project'))
 
 app.listen(app.get('port'), () => {
   console.log(`listening at ${app.get('port')}`);
